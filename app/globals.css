@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 4%;
+    --foreground: 40 20% 95%;
+    --card: 0 0% 7%;
+    --card-foreground: 40 20% 95%;
+    --popover: 0 0% 7%;
+    --popover-foreground: 40 20% 95%;
+    --primary: 43 74% 49%;
+    --primary-foreground: 0 0% 4%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 40 20% 90%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 40 10% 60%;
+    --accent: 43 50% 30%;
+    --accent-foreground: 43 74% 80%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 43 20% 18%;
+    --input: 0 0% 14%;
+    --ring: 43 74% 49%;
+    --chart-1: 43 74% 49%;
+    --chart-2: 43 50% 65%;
+    --chart-3: 0 0% 60%;
+    --chart-4: 43 30% 35%;
+    --chart-5: 43 80% 55%;
+    --radius: 0.5rem;
+    --gold: 43 74% 49%;
+    --gold-light: 43 70% 70%;
+    --gold-dark: 43 60% 30%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(0 0% 4%);
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(43 74% 49%);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(43 74% 60%);
+}
