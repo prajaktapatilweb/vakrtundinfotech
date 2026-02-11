@@ -7,34 +7,34 @@ import Image from "next/image";
 
 const slides = [
     {
-    image: "/images/hardware.jpg",
+    image: "/images/hardservice.jpg",
     title: "Hardware Services",
-    subtitle: "Surveillance & AMC Services",
+    subtitle: "Advanced Hardware Repair & IT Support Services",
     description:
-      "Complete CCTV installation and annual maintenance contracts for IT parks in Kharadi, Hinjwadi, and Baner.",
+      "Professional laptop and desktop repair, AMC services, accessories, data recovery, and complete networking solutions — all under one roof.",
   },
   
   {
-    image: "/images/laptop.jpg",
+    image: "/images/itrentals.jpg",
     title: "Premium IT Rentals",
-    subtitle: "Laptops, Desktops & Projectors",
+    subtitle: "On-Demand IT Infrastructure Rentals",
     description:
-      "Empower your business with our top-tier rental solutions. Flexible plans for startups, enterprises, and events across India.",
+      "From everyday laptops and desktops to enterprise-grade servers and projectors — we provide flexible rental solutions tailored to your requirements.",
   },
   {
     image: "/images/networking.jpg",
     title: "Software Services",
-    subtitle: "Racks, Switches & WiFi Solutions",
+    subtitle: "Professional Software Deployment & Support",
     description:
-      "End-to-end networking solutions including server rack setup, switch configuration, and enterprise WiFi deployment.",
+      "We deliver end-to-end software solutions including Microsoft 365, design tools, accounting software, industrial applications, and security systems. Boost productivity with reliable setup and expert support.",
   },
 
     {
     image: "/images/networking.jpg",
     title: "Networking & Infrastructure",
-    subtitle: "Racks, Switches & WiFi Solutions",
+    subtitle: "Secure Networks. Smart Surveillance.",
     description:
-      "End-to-end networking solutions including server rack setup, switch configuration, and enterprise WiFi deployment.",
+      "From structured cabling and network rack setup to switch configuration and WiFi management, we deliver reliable IT infrastructure. We also offer CCTV installation and annual maintenance contracts for complete protection.",
   },
 ];
 

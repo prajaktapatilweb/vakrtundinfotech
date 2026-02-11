@@ -17,19 +17,19 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+91 99999 99999",
-    href: "tel:+919999999999",
+    value: "+9175932227 ",
+    href: "tel:+9175932227 ",
   },
   {
     icon: Mail,
     label: "Email",
-    value: "info@technovasolutions.in",
-    href: "mailto:info@technovasolutions.in",
+    value: " vakratundtech@gmail.com ",
+    href: "mailto: vakratundtech@gmail.com ",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "Kharadi, Pune, Maharashtra",
+    value: "Office No-4, Jay Shri Hari Building Vinayak Nagar Lane No-2 Kate Puram Chowk Opposite RK Complex Pimple Gurav Pune 411061",
     href: "#",
   },
   {
@@ -169,7 +169,7 @@ export default function ContactSection() {
                 </motion.div>
               ) : (
                 <>
-                  <div className="mb-8 grid gap-6 md:grid-cols-2">
+                  <div className="mb-8 grid gap-6 md:grid-cols-1">
                     <div>
                       <label
                         htmlFor="name"
@@ -189,6 +189,8 @@ export default function ContactSection() {
                         placeholder="Your name"
                       />
                     </div>
+                    </div>
+                    <div className="mb-8 grid gap-6 md:grid-cols-2">
                     <div>
                       <label
                         htmlFor="email"
@@ -226,32 +228,7 @@ export default function ContactSection() {
                         placeholder="+91 XXXXX XXXXX"
                       />
                     </div>
-                    <div>
-                      <label
-                        htmlFor="service"
-                        className="mb-2 block text-sm font-medium text-[hsl(var(--foreground))]"
-                      >
-                        Service Required
-                      </label>
-                      <select
-                        id="service"
-                        value={formData.service}
-                        onChange={(e) =>
-                          setFormData({ ...formData, service: e.target.value })
-                        }
-                        className="w-full rounded-lg border border-[hsl(var(--border))] bg-[hsl(var(--input))] px-4 py-3 text-sm text-[hsl(var(--foreground))] outline-none transition-all focus:border-[hsl(var(--primary))] focus:ring-1 focus:ring-[hsl(var(--primary))]"
-                      >
-                        <option value="">Select a service</option>
-                        <option value="rental">Laptop / Desktop Rental</option>
-                        <option value="hardware">Hardware & Accessories</option>
-                        <option value="networking">Networking Solutions</option>
-                        <option value="cctv">CCTV & Surveillance</option>
-                        <option value="software">Software Installation</option>
-                        <option value="refurbished">Refurbished Devices</option>
-                        <option value="accessories">Accessories Supply</option>
-                        <option value="other">Other</option>
-                      </select>
-                    </div>
+                   
                   </div>
                   <div className="mb-8">
                     <label

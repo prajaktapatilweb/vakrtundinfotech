@@ -71,22 +71,23 @@ export default function Footer() {
             </p>
             <div className="flex flex-col gap-2">
               <a
-                href="tel:+919999999999"
+                href="tel:+9175932227 "
                 className="flex items-center gap-2 text-sm text-[hsl(var(--muted-foreground))] transition-colors hover:text-[hsl(var(--primary))]"
               >
                 <Phone className="h-4 w-4 text-[hsl(var(--primary))]" />
-                +91 99999 99999
+                +9175932227 
               </a>
               <a
-                href="mailto:info@technovasolutions.in"
+                href="mailto:vakratundtech@gmail.com"
                 className="flex items-center gap-2 text-sm text-[hsl(var(--muted-foreground))] transition-colors hover:text-[hsl(var(--primary))]"
               >
                 <Mail className="h-4 w-4 text-[hsl(var(--primary))]" />
-                info@technovasolutions.in
+               vakratundtech@gmail.com 
               </a>
               <span className="flex items-center gap-2 text-sm text-[hsl(var(--muted-foreground))]">
-                <MapPin className="h-4 w-4 text-[hsl(var(--primary))]" />
-                Kharadi, Pune, Maharashtra
+                <MapPin className="h-4 w-12 text-[hsl(var(--primary))]" />
+                Office No-4, Jay Shri Hari Building Vinayak Nagar Lane No-2 Kate Puram Chowk Opposite RK 
+Complex Pimple Gurav Pune 411061
               </span>
             </div>
           </motion.div>
