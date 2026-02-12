@@ -2,7 +2,7 @@
 
 import { useState, useCallback, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight, ArrowRight, CheckCircle2 } from "lucide-react";
+import { ChevronLeft, ChevronRight,CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 
@@ -89,7 +89,7 @@ const tabs = [
 "Backup & disaster recovery planning",
 "Virtualization setup (VMware / Hyper-V)",
 "Security patch updates & firewall configuration",
-"Ongoing maintenance & technical support",
+// "Ongoing maintenance & technical support",
 
         ],
       },
@@ -131,20 +131,6 @@ const tabs = [
         title: "Microsoft Office 365 Setup ",
         image: "/images/microsoft.jpg",
         description:
-          "Professional Outlook email setup and configuration for businesses. Seamless integration with company mail servers and cloud platforms.",
-        points: [
-          "Outlook desktop & mobile setup",
-          "POP3 / IMAP / Exchange configuration",
-          "Email migration & data transfer",
-          "Calendar & contacts synchronization",
-          "Shared mailbox configuration",
-          "Troubleshooting & support",
-        ],
-      },
-      {
-        title: " AutoCAD",
-        image: "/images/autocad.jpg",
-        description:
           "Complete Microsoft 365 suite configuration including Teams, SharePoint, OneDrive, and admin console setup for your organization.",
         points: [
           "Microsoft 365 tenant setup",
@@ -156,59 +142,70 @@ const tabs = [
         ],
       },
       {
+        title: " AutoCAD",
+        image: "/images/autocad.jpg",
+        description:
+          "Professional AutoCAD installation, configuration, and support services for engineering, architectural, and design professionals. We ensure smooth performance, proper licensing, and optimized system setup for high-efficiency design work.",
+        points: [
+"AutoCAD installation & activation",
+"2D & 3D drafting environment setup",
+"Plotter & printer configuration",
+"Software troubleshooting & updates",
+"Technical support & maintenance assistance",
+
+        ],
+      },
+      {
         title: " CorelDRAW Photoshop",
         image: "/images/design.png",
         description:
-          "Secure data migration, backup solutions, and recovery services to ensure your business data is always protected and accessible.",
+          "Professional installation and setup of CorelDRAW and Adobe Photoshop for graphic design, branding, and creative projects. Optimized configuration to ensure smooth and efficient performance.",
         points: [
-          "Data migration between devices",
-          "Cloud backup configuration",
-          "Disaster recovery planning",
-          "Automated backup scheduling",
-          "File server management",
-          "Encrypted data transfers",
+"Software installation & activation",
+"System performance optimization",
+"Version upgrades & updates",
+"Basic configuration & troubleshooting support",
+
         ],
       },
       {
         title: " Tally Prime  ",
         image: "/images/tally.jpg",
         description:
-          "Secure data migration, backup solutions, and recovery services to ensure your business data is always protected and accessible.",
+          "Professional Tally Prime installation and setup for efficient accounting and business management. We ensure proper configuration, data security, and smooth performance for hassle-free financial operations.",
         points: [
-          "Data migration between devices",
-          "Cloud backup configuration",
-          "Disaster recovery planning",
-          "Automated backup scheduling",
-          "File server management",
-          "Encrypted data transfers",
+"Tally Prime installation & activation",
+"Data migration & backup support",
+"GST & taxation setup",
+"Multi-user & network configuration",
+"Troubleshooting & technical support",
+
         ],
       },
       {
         title: "Antivirus ",
         image: "/images/antivirus.webp",
         description:
-          "Secure data migration, backup solutions, and recovery services to ensure your business data is always protected and accessible.",
+          "Advanced antivirus installation and security solutions to protect your systems from viruses, malware, ransomware, and cyber threats.We ensure real-time protection and secure performance for your business and personal devices.",
         points: [
-          "Data migration between devices",
-          "Cloud backup configuration",
-          "Disaster recovery planning",
-          "Automated backup scheduling",
-          "File server management",
-          "Encrypted data transfers",
+"Installation & activation",
+"Virus & malware removal",
+"Security updates & renewal",
+"Basic protection configuration",
+
         ],
       },
       {
         title: "Reporting Software’s  ",
         image: "/images/reporting.jpg",
         description:
-          "Secure data migration, backup solutions, and recovery services to ensure your business data is always protected and accessible.",
+          "Efficient reporting software setup to help businesses generate accurate reports, analyze data, and improve decision-making.",
         points: [
-          "Data migration between devices",
-          "Cloud backup configuration",
-          "Disaster recovery planning",
-          "Automated backup scheduling",
-          "File server management",
-          "Encrypted data transfers",
+"Installation & configuration",
+"Custom report setup",
+"Data integration support",
+"Maintenance & troubleshooting",
+
         ],
       },
     ] as ServiceCard[],
@@ -263,14 +260,13 @@ const tabs = [
         title: "Servers Machines On rent (high Performers) ",
         image: "/images/server1.jpg",
         description:
-          "Cost-effective refurbished laptop and desktop rentals. Thoroughly tested devices at budget-friendly rental rates for businesses.",
+          "High-performance server machines available on rent for businesses, startups, and project-based requirements. Flexible and cost-effective solutions without heavy investment.",
         points: [
-          "Certified refurbished devices",
-          "Quality tested & assured",
-          "Budget-friendly rental rates",
-          "Ideal for startups & training",
-          "Warranty included on all units",
-          "Available for bulk rental orders",
+"Enterprise-grade server rentals",
+"Short-term & long-term rental options",
+"Pre-configured & custom configurations",
+"Quick deployment & setup support",
+"Maintenance & technical assistance",
         ],
       },
     ] as ServiceCard[],
@@ -280,9 +276,12 @@ const tabs = [
 
 function ServiceSlider({ services }: { services: ServiceCard[] }) {
   const [emblaRef, emblaApi] = useEmblaCarousel({
-    align: "start",
+    
     loop: true,
-    slidesToScroll: 1,
+    align: "start",
+      slidesToScroll: "auto",
+  containScroll: "keepSnaps",
+    
   });
   const [canScrollPrev, setCanScrollPrev] = useState(false);
   const [canScrollNext, setCanScrollNext] = useState(true);
@@ -315,7 +314,7 @@ function ServiceSlider({ services }: { services: ServiceCard[] }) {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="min-w-0 shrink-0 basis-full pl-4 md:basis-1/3 md:pl-6"
+              className="shrink-0 basis-full pl-4 md:basis-1/3 md:pl-6"
             >
               <div className="group flex h-full flex-col overflow-hidden rounded-xl border border-[hsl(var(--border))] bg-[hsl(var(--background))] transition-all duration-300 hover:border-[hsl(var(--primary))]/50 hover:shadow-xl hover:shadow-[hsl(var(--primary))]/5">
                 {/* Card Image */}
@@ -350,13 +349,13 @@ function ServiceSlider({ services }: { services: ServiceCard[] }) {
                     ))}
                   </ul>
 
-                  <a
+                  {/* <a
                     href="#contact"
                     className="group/btn inline-flex w-fit items-center gap-1.5 text-sm font-semibold text-[hsl(var(--primary))] transition-all hover:gap-3"
                   >
                     Learn More
                     <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover/btn:translate-x-1" />
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </motion.div>
@@ -437,10 +436,10 @@ export default function ServicesSection() {
             What We{" "}
             <span className="text-[hsl(var(--primary))]">Offer</span>
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-[hsl(var(--muted-foreground))]">
+          {/* <p className="mx-auto mt-4 max-w-2xl text-[hsl(var(--muted-foreground))]">
             Comprehensive IT solutions tailored to meet the demands of modern
             businesses. From rentals to infrastructure, we{"'"}ve got you covered.
-          </p>
+          </p> */}
         </motion.div>
 
         {/* Tabs */}
