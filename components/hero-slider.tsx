@@ -22,7 +22,7 @@ const slides = [
       "From everyday laptops and desktops to enterprise-grade servers and projectors — we provide flexible rental solutions tailored to your requirements.",
   },
   {
-    image: "/images/networking.jpg",
+    image: "/images/softservice.jpg",
     title: "Software Services",
     subtitle: "Professional Software Deployment & Support",
     description:
@@ -74,7 +74,7 @@ export default function HeroSlider() {
             priority
           />
           {/* Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[hsl(0,0%,0%)]/70 via-[hsl(0,0%,0%)]/85 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[hsl(0,0%,0%)]/85 via-[hsl(0,0%,0%)]/85 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-[hsl(0,0%,4%)] via-transparent to-transparent" />
         </motion.div>
       </AnimatePresence>

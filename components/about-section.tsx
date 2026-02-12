@@ -58,7 +58,7 @@ export default function AboutSection() {
             <div className="relative">
               <div className="overflow-hidden rounded-2xl border border-[hsl(var(--border))]">
                 <Image
-                  src="/images/networking.jpg"
+                  src="/images/aboutus1.jpg"
                   alt="TechNova Solutions office - professional IT workspace"
                   width={640}
                   height={440}
@@ -66,7 +66,7 @@ export default function AboutSection() {
                 />
               </div>
               {/* Floating stat card */}
-              <motion.div
+              {/* <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -75,7 +75,7 @@ export default function AboutSection() {
               >
                 <p className="font-serif text-3xl font-bold text-[hsl(var(--primary))]">3+</p>
                 <p className="text-sm text-[hsl(var(--muted-foreground))]">Years of Excellence</p>
-              </motion.div>
+              </motion.div> */}
             </div>
 
             {/* Stats grid */}
