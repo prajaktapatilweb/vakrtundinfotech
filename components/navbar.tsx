@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -36,7 +37,8 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <a href="#home" className="flex items-center gap-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-[hsl(var(--primary))] bg-[hsl(var(--primary))]/10">
+          <Image src='/logo3.png' width='100' height='100' alt="vakrtuninfotech"></Image>
+          {/* <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-[hsl(var(--primary))] bg-[hsl(var(--primary))]/10">
             <span className="font-serif text-xl font-bold text-[hsl(var(--primary))]">
               T
             </span>
@@ -48,7 +50,7 @@ export default function Navbar() {
             <span className="font-serif text-xl font-bold tracking-wide text-[hsl(var(--primary))]">
               Nova
             </span>
-          </div>
+          </div> */}
         </a>
 
         {/* Desktop Nav */}
@@ -67,7 +69,7 @@ export default function Navbar() {
         {/* CTA + Mobile Toggle */}
         <div className="flex items-center gap-4">
           <a
-            href="tel:+919999999999"
+            href="tel:+9175932227"
             className="hidden items-center gap-2 rounded-full border border-[hsl(var(--primary))] bg-[hsl(var(--primary))]/10 px-5 py-2.5 text-sm font-semibold text-[hsl(var(--primary))] transition-all hover:bg-[hsl(var(--primary))] hover:text-[hsl(var(--primary-foreground))] md:flex"
           >
             <Phone className="h-4 w-4" />

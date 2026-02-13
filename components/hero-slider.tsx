@@ -74,13 +74,13 @@ export default function HeroSlider() {
             priority
           />
           {/* Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[hsl(0,0%,0%)]/85 via-[hsl(0,0%,0%)]/85 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[hsl(0,0%,0%)]/85 via-[hsl(0,0%,10%)]/80 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-[hsl(0,0%,4%)] via-transparent to-transparent" />
         </motion.div>
       </AnimatePresence>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto flex h-full max-w-7xl items-center px-6">
+      <div className="relative z-10 mx-auto flex h-full max-w-7xl items-center px-6 mt-4">
         <div className="max-w-2xl">
           <AnimatePresence mode="wait">
             <motion.div

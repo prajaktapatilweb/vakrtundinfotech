@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, ArrowUp } from "lucide-react";
+import Image from "next/image";
 
 const services = [
   "Laptop & Desktop Rentals",
@@ -50,19 +51,9 @@ export default function Footer() {
             viewport={{ once: true }}
           >
             <div className="mb-4 flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-[hsl(var(--primary))] bg-[hsl(var(--primary))]/10">
-                <span className="font-serif text-xl font-bold text-[hsl(var(--primary))]">
-                  T
-                </span>
-              </div>
-              <div>
-                <span className="font-serif text-xl font-bold text-[hsl(var(--foreground))]">
-                  Tech
-                </span>
-                <span className="font-serif text-xl font-bold text-[hsl(var(--primary))]">
-                  Nova
-                </span>
-              </div>
+                        <Image src='/logo3.png' width='100' height='100' alt="vakrtuninfotech"></Image>
+              
+            
             </div>
             <p className="mb-6 text-sm leading-relaxed text-[hsl(var(--muted-foreground))]">
               Your trusted IT solutions partner since 2022. We provide premium
@@ -169,7 +160,7 @@ Complex Pimple Gurav Pune 411061
       <div className="border-t border-[hsl(var(--border))]">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-6 md:flex-row">
           <p className="text-xs text-[hsl(var(--muted-foreground))]">
-            &copy; {new Date().getFullYear()} TechNova Solutions. All rights reserved.
+            &copy; {new Date().getFullYear()} Vakrtunda Infotech. All rights reserved.
           </p>
           <button
             type="button"

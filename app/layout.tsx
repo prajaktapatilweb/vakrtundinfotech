@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' })
 
 export const metadata: Metadata = {
-  title: 'TechNova Solutions | IT Rentals, Hardware & Networking Services Since 2022',
+  title: 'Vakrtunda Infotech | IT Rentals, Hardware & Networking Services Since 2022',
   description:
     'Premium IT solutions provider offering laptop & desktop rentals, hardware accessories, networking infrastructure, CCTV installations, software configuration, and refurbished device sales across Pune, Chennai, Bangalore, Noida & more.',
   keywords:

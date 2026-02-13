@@ -80,10 +80,10 @@ export default function ContactSection() {
             Get In{" "}
             <span className="text-[hsl(var(--primary))]">Touch</span>
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-[hsl(var(--muted-foreground))]">
+          {/* <p className="mx-auto mt-4 max-w-2xl text-[hsl(var(--muted-foreground))]">
             Ready to elevate your IT infrastructure? Contact us for a free consultation
             and customized quote.
-          </p>
+          </p> */}
         </motion.div>
 
         <div className="flex flex-col gap-12 lg:flex-row">

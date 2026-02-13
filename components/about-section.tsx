@@ -59,7 +59,7 @@ export default function AboutSection() {
               <div className="overflow-hidden rounded-2xl border border-[hsl(var(--border))]">
                 <Image
                   src="/images/aboutus1.jpg"
-                  alt="TechNova Solutions office - professional IT workspace"
+                  alt="Vakrtunda Infotech office - professional IT workspace"
                   width={640}
                   height={440}
                   className="h-[320px] w-full object-cover md:h-[440px]"
@@ -113,7 +113,7 @@ export default function AboutSection() {
             </h3>
 
             <p className="mb-6 leading-relaxed text-[hsl(var(--muted-foreground))]">
-              Founded in 2022, TechNova Solutions has rapidly grown to become a trusted name in
+              Founded in 2022, Vakrtunda Infotech Solutions has rapidly grown to become a trusted name in
               IT infrastructure services. We specialize in providing comprehensive technology
               solutions to businesses in Pune{"'"}s thriving IT corridors - Kharadi, Hinjwadi, and
               Baner - and have expanded our footprint to major cities including Chennai,
