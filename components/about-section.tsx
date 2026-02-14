@@ -22,7 +22,7 @@ const highlights = [
 
 export default function AboutSection() {
   return (
-    <section id="about" className="relative overflow-hidden py-24 md:py-32">
+    <section id="about" className="relative scroll-mt-24 overflow-hidden py-24 md:py-32">
       {/* Background decoration */}
       <div className="absolute right-0 top-0 h-96 w-96 rounded-full bg-[hsl(var(--primary))]/5 blur-3xl" />
       <div className="absolute bottom-0 left-0 h-64 w-64 rounded-full bg-[hsl(var(--primary))]/3 blur-3xl" />

@@ -414,7 +414,7 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
-      className="relative overflow-hidden bg-[hsl(var(--card))] py-24 md:py-32"
+      className="relative scroll-mt-24 overflow-hidden bg-[hsl(var(--card))] py-24 md:py-32"
     >
       {/* Background accents */}
       <div className="absolute left-0 top-1/4 h-96 w-96 rounded-full bg-[hsl(var(--primary))]/3 blur-3xl" />
