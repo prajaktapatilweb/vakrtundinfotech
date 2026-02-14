@@ -84,6 +84,13 @@ export default function ContactForm() {
                         <p className="text-[hsl(var(--muted-foreground))]">
                             We've received your message. Our team will get back to you shortly.
                         </p>
+                        <button
+                            onClick={() => setSubmitted(false)}
+                            className="mt-6 text-sm text-[hsl(var(--primary))] underline"
+                        >
+                            Send another message
+                        </button>
+
                     </motion.div>
                 ) : (
 
