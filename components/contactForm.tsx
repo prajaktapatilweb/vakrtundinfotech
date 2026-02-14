@@ -51,6 +51,7 @@ export default function ContactForm() {
                 msg: values.msg,
                 email: values.email,
             });
+            setSubmitted(true);
             // router.push("/thankyou");
             helpers.resetForm();
         } catch (error) {
