@@ -26,7 +26,7 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: " vakratundtech@gmail.com ",
+    value: "vakratundtech@gmail.com",
     href: "mailto: vakratundtech@gmail.com ",
   },
   {

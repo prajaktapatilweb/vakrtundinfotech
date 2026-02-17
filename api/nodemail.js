@@ -27,7 +27,7 @@ export default async function handler(req, res) {
                     `Dear Admin, \n \n Details of the person contacted you are as follows \n
                   Name: ${req.body.name} \n
                   Mobile Number: ${req.body.mobileno} \n
-                  Purpose : ${req.body.selection} \n
+                  Emaail of client : ${req.body.email} \n
                   Message : ${req.body.msg} \n
                   Date & Time :${date} \n
                   IP Address: ${clientIp} \n`
