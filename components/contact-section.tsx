@@ -20,7 +20,7 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+9175932227 ",
+    value: "+91 9175932227 ",
     href: "tel:+9175932227 ",
   },
   {
